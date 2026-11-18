@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday, Bhai ❤️</title>
+<meta name="description" content="Something I could never say out loud. So I built it.">
+<meta name="theme-color" content="#0d0a14">
+<!-- Nicer WhatsApp/Instagram link preview: after publishing, replace YOUR-USERNAME below (see README) -->
+<meta property="og:title" content="Happy Birthday, Bhai ❤️">
+<meta property="og:description" content="Something I could never say out loud. So I built it.">
+<meta property="og:image" content="https://YOUR-USERNAME.github.io/bhai-birthday-2026/photos/og.jpg">
+<meta property="og:type" content="website">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400;1,9..144,600&family=JetBrains+Mono:wght@400;500&family=Press+Start+2P&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<canvas id="petals" aria-hidden="true"></canvas>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div id="xp" aria-hidden="true"><i></i></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<button id="snd" aria-label="Toggle sound" title="Sound on/off">🔊</button>
+
+<!-- ============ START GATE ============ -->
+<div id="gate">
+  <div class="shapes" aria-hidden="true">
+    <span class="sh tri">△</span><span class="sh cir">○</span><span class="sh crs">✕</span><span class="sh sqr">□</span>
+  </div>
+  <div class="gate-inner">
+    <p class="pixel tiny">PLAYER 1 &nbsp;·&nbsp; 19.11.2026</p>
+    <h1 class="pixel gate-title">NEW LEVEL<br>UNLOCKED</h1>
+    <p class="gate-sub">Today is a very special someone's birthday.</p>
+    <button id="start" class="pixel start-btn">▶ PRESS START</button>
+    <p class="gate-hint">turn your volume up 🔊</p>
+  </div>
+  <noscript><p style="position:absolute;bottom:20px;width:100%;text-align:center">Please enable JavaScript to see this gift ❤️</p></noscript>
+</div>
+
+<!-- ============ HERO ============ -->
+<header id="hero">
+  <div class="hero-bg a" id="bgA"></div>
+  <div class="hero-bg b" id="bgB"></div>
+  <div class="hero-shade"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">19 · 11 · 2026</p>
+      <h2 class="hero-title" aria-label="Happy Birthday, Bhai">
+        <span class="line"><span>Happy</span></span>
+        <span class="line"><span>Birthday,</span></span>
+        <span class="line"><span class="accent" id="bhaiWord">Bhai</span></span>
+      </h2>
+      <p class="deva">जन्मदिन मुबारक हो, भाई</p>
+      <p class="hero-sub">I can't say it out loud.<br>So I wrote it in the only language I'm fluent in.</p>
+      <a class="cue" href="#ch1"><span>scroll</span><i></i></a>
+    </div>
+    <div class="hero-photo" aria-hidden="false">
+      <div class="stack">
+        <span class="base"></span>
+        <div class="win">
+        <img class="on" src="photos/p1.jpg" data-cap="Festival mood" alt="Our family dressed up for a festival, smiling">
+        <img src="photos/p2.jpg" data-cap="Sea breeze & us" alt="Selfie by the sea with the family">
+        <img src="photos/p3.jpg" data-cap="Partners in crime" alt="Two brothers standing together">
+        <img src="photos/p7.jpg" data-cap="Full hearts, always" alt="Family photo in a garden at night">
+        </div>
+        <span class="tape"></span>
+        <p class="cap" id="heroCap">Festival mood</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ CHAPTER 1 ============ -->
+<section id="ch1" class="chapter">
+  <div class="wrap split">
+    <figure class="tilt reveal" data-tilt>
+      <div class="frame"><img src="photos/p6.jpg" alt="Me and my brother, smiling" style="object-position:50% 30%"></div>
+      <figcaption>Co-op mode: ON. Since forever.</figcaption>
+    </figure>
+    <div class="copy">
+      <p class="kicker reveal"><span class="pixel">CHAPTER 01</span> Player 1</p>
+      <h3 class="reveal">Before I knew what code was,<br><em>I knew what a controller felt like.</em></h3>
+      <p class="reveal">You're the one who put it in my hands. You showed me what a PlayStation is, what a video game is — and suddenly a screen wasn't just a screen. It was a whole world.</p>
+      <p class="reveal">That's why I play every game like I've been doing it all my life. I learned from the best Player 1 I know.</p>
+      <div class="hud reveal">
+        <div><b class="pixel">P1</b> Bhai <span class="hearts">♥♥♥</span></div>
+        <div><b class="pixel">P2</b> Kunj <span class="hearts">♥♥♥</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 2 : COMMITS ============ -->
+<section id="ch2" class="chapter alt">
+  <div class="wrap">
+    <p class="kicker reveal"><span class="pixel">CHAPTER 02</span> The push</p>
+    <h3 class="reveal big">Everything I've built,<br><em>started with you.</em></h3>
+    <div class="term reveal" id="term">
+      <div class="term-bar"><i></i><i></i><i></i><span>~/our-story — zsh</span></div>
+      <div class="term-body" id="termBody" aria-label="A git history of everything my brother did for me"></div>
+    </div>
+    <p class="after reveal">Shatakam. piZiste. Every app, every late night, every line.<br>Somewhere in the history of my life, <strong>your name is on the first commit.</strong></p>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 3 : RAM & LAKSHMAN ============ -->
+<section id="ch3" class="cine">
+  <div class="parallax"><img src="photos/p1.jpg" alt="Me and my brother in matching red, with our parents" style="object-position:50% 22%"></div>
+  <div class="cine-shade"></div>
+  <div class="wrap cine-copy">
+    <p class="kicker reveal"><span class="pixel">CHAPTER 03</span> राम &amp; लक्ष्मण</p>
+    <h3 class="reveal big">You walk ahead.<br>I walk beside.<br><em>Always.</em></h3>
+    <p class="reveal">You've always been the one in front — protective, steady, clearing the road so I never had to walk it alone. And I've always been right there with you. Not because anyone asked. Because it's the only place I'd ever want to be.</p>
+    <p class="reveal strong">Ram has his Lakshman. You have yours.</p>
+  </div>
+</section>
+
+<!-- ============ TROPHIES ============ -->
+<section id="trophies" class="chapter">
+  <div class="wrap narrow">
+    <p class="kicker reveal"><span class="pixel">ACHIEVEMENTS</span> Trophy list</p>
+    <h3 class="reveal big">100% completed.<br><em>No DLC needed.</em></h3>
+    <ul class="tlist" id="tlist">
+      <li class="trophy bronze"><span class="ico">🥉</span><div><b>Co-op Partner</b><p>Shared the screen, the controller and the bragging rights.</p></div><em>Bronze</em></li>
+      <li class="trophy silver"><span class="ico">🥈</span><div><b>First Controller</b><p>Handed a little brother his very first PlayStation controller.</p></div><em>Silver</em></li>
+      <li class="trophy silver"><span class="ico">🥈</span><div><b>Code Whisperer</b><p>Told me I could learn to code — and kept saying it until I did.</p></div><em>Silver</em></li>
+      <li class="trophy gold"><span class="ico">🥇</span><div><b>The Believer</b><p>Believed in Shatakam and piZiste before they were anything.</p></div><em>Gold</em></li>
+      <li class="trophy gold"><span class="ico">🥇</span><div><b>Guardian</b><p>Protective. Always there. Zero cooldown.</p></div><em>Gold</em></li>
+      <li class="trophy plat" id="platinum"><span class="ico">🏆</span><div><b>Best Elder Brother</b><p>Every other trophy unlocked. Rarity: 1 of 1.</p></div><em>Platinum</em></li>
+      <li class="trophy secret" id="secret" tabindex="0" role="button" aria-label="Secret trophy, tap to reveal"><span class="ico">❔</span><div><b>Secret trophy</b><p>Tap to reveal…</p></div><em>???</em></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ THINGS I NEVER SAY ============ -->
+<section id="unsaid" class="chapter alt">
+  <div class="wrap">
+    <p class="kicker reveal"><span class="pixel">SIDE QUEST</span> Things I never say out loud</p>
+    <h3 class="reveal big">Four things.<br><em>Tap each one.</em></h3>
+    <div class="cards">
+      <button class="card reveal" aria-pressed="false"><span class="face front"><b class="pixel">01</b><span class="t">Thank you</span><small>tap ↻</small></span><span class="face back"><span>For the controller. For the push. For every time you stood ahead of me, behind me, beside me.</span></span></button>
+      <button class="card reveal" aria-pressed="false"><span class="face front"><b class="pixel">02</b><span class="t">I'm proud of you</span><small>tap ↻</small></span><span class="face back"><span>You show up with the same big heart for everyone around you. I notice. I always have.</span></span></button>
+      <button class="card reveal" aria-pressed="false"><span class="face front"><b class="pixel">03</b><span class="t">I look up to you</span><small>tap ↻</small></span><span class="face back"><span>Whatever I've built, I built it standing on your shoulders.</span></span></button>
+      <button class="card reveal" aria-pressed="false"><span class="face front"><b class="pixel">04</b><span class="t">I love you</span><small>tap ↻</small></span><span class="face back"><span>I'm terrible at saying it. But I love you, Bhai — more than I'll ever manage to say.</span></span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" class="chapter">
+  <div class="wrap">
+    <p class="kicker reveal"><span class="pixel">SAVE FILES</span> Our memories</p>
+    <h3 class="reveal big">Every level, <em>together.</em></h3>
+  </div>
+  <div class="rail" id="rail">
+    <figure class="polaroid" style="--r:-3deg"><img src="photos/p3.jpg" alt="Two brothers together" data-cap="Partners in crime"><figcaption>Partners in crime</figcaption></figure>
+    <figure class="polaroid" style="--r:2.5deg"><img src="photos/p6.jpg" alt="Me and my brother selfie" data-cap="Me & you"><figcaption>Me &amp; you</figcaption></figure>
+    <figure class="polaroid" style="--r:-2deg"><img src="photos/p2.jpg" alt="Family selfie by the sea" data-cap="Sea breeze, family, us"><figcaption>Sea breeze, family, us</figcaption></figure>
+    <figure class="polaroid wide" style="--r:3deg"><img src="photos/p5.jpg" alt="Family on a boat" data-cap="Out on the water"><figcaption>Out on the water</figcaption></figure>
+    <figure class="polaroid" style="--r:-2.5deg"><img src="photos/p4.jpg" alt="Family selfie in the sunshine" data-cap="Sunshine &amp; selfies"><figcaption>Sunshine &amp; selfies</figcaption></figure>
+    <figure class="polaroid" style="--r:2deg"><img src="photos/p7.jpg" alt="Family together in the evening" data-cap="Full hearts, always"><figcaption>Full hearts, always</figcaption></figure>
+    <figure class="polaroid" style="--r:-3deg"><img src="photos/p8.jpg" alt="Family selfie at home" data-cap="Home is where we are"><figcaption>Home is where we are</figcaption></figure>
+    <figure class="polaroid" style="--r:2.5deg"><img src="photos/p1.jpg" alt="Family dressed up for a festival" data-cap="Festival mood"><figcaption>Festival mood</figcaption></figure>
+  </div>
+  <p class="swipe-hint">swipe → · tap a photo to open</p>
+</section>
+
+<!-- ============ CAKE ============ -->
+<section id="cake" class="chapter alt center">
+  <div class="wrap narrow">
+    <p class="kicker reveal"><span class="pixel">BONUS LEVEL</span> Make a wish</p>
+    <h3 class="reveal big">Close your eyes.<br><em>Blow the candles.</em></h3>
+    <div class="cake-wrap reveal">
+      <svg id="cakeSvg" viewBox="0 0 320 300" role="img" aria-label="A birthday cake with five candles">
+        <defs>
+          <linearGradient id="gA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff9a3c"/><stop offset="1" stop-color="#ff6a1a"/></linearGradient>
+          <linearGradient id="gB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff7b8f"/><stop offset="1" stop-color="#ff4d6d"/></linearGradient>
+          <radialGradient id="glow"><stop offset="0" stop-color="#ffd35c" stop-opacity=".9"/><stop offset="1" stop-color="#ffd35c" stop-opacity="0"/></radialGradient>
+        </defs>
+        <ellipse cx="160" cy="272" rx="150" ry="16" fill="#000" opacity=".35"/>
+        <ellipse cx="160" cy="262" rx="140" ry="14" fill="#efe6da"/>
+        <rect x="42" y="176" width="236" height="88" rx="14" fill="url(#gA)"/>
+        <path d="M42 190 q14 20 28 0 t28 0 t28 0 t28 0 t28 0 t28 0 t28 0 t28 0 V176 H42Z" fill="#fff6e8"/>
+        <rect x="82" y="120" width="156" height="62" rx="12" fill="url(#gB)"/>
+        <path d="M82 134 q13 18 26 0 t26 0 t26 0 t26 0 t26 0 t26 0 V120 H82Z" fill="#fff6e8"/>
+        <g fill="#ffd35c"><circle cx="70" cy="222" r="3"/><circle cx="110" cy="236" r="3"/><circle cx="160" cy="226" r="3"/><circle cx="212" cy="238" r="3"/><circle cx="252" cy="224" r="3"/></g>
+        <g fill="#4cc9f0"><circle cx="90" cy="244" r="3"/><circle cx="136" cy="214" r="3"/><circle cx="188" cy="246" r="3"/><circle cx="234" cy="214" r="3"/></g>
+        <text x="160" y="168" text-anchor="middle" font-family="Fraunces,serif" font-style="italic" font-size="26" fill="#fff" font-weight="600">Bhai</text>
+        <g id="candles">
+          <g class="candle" transform="translate(112 0)"><rect x="-4" y="84" width="8" height="38" rx="2" fill="#fff"/><rect x="-4" y="94" width="8" height="5" fill="#ff5d73"/><g class="flame" tabindex="0" role="button" aria-label="Candle"><circle cx="0" cy="68" r="22" fill="url(#glow)"/><path d="M0 52 C7 62 7 72 0 80 C-7 72 -7 62 0 52Z" fill="#ffb627"/><path d="M0 63 C3 68 3 73 0 77 C-3 73 -3 68 0 63Z" fill="#fff3c4"/></g></g>
+          <g class="candle" transform="translate(136 0)"><rect x="-4" y="84" width="8" height="38" rx="2" fill="#fff"/><rect x="-4" y="94" width="8" height="5" fill="#4cc9f0"/><g class="flame" tabindex="0" role="button" aria-label="Candle"><circle cx="0" cy="68" r="22" fill="url(#glow)"/><path d="M0 52 C7 62 7 72 0 80 C-7 72 -7 62 0 52Z" fill="#ffb627"/><path d="M0 63 C3 68 3 73 0 77 C-3 73 -3 68 0 63Z" fill="#fff3c4"/></g></g>
+          <g class="candle" transform="translate(160 0)"><rect x="-4" y="84" width="8" height="38" rx="2" fill="#fff"/><rect x="-4" y="94" width="8" height="5" fill="#ffb627"/><g class="flame" tabindex="0" role="button" aria-label="Candle"><circle cx="0" cy="68" r="22" fill="url(#glow)"/><path d="M0 52 C7 62 7 72 0 80 C-7 72 -7 62 0 52Z" fill="#ffb627"/><path d="M0 63 C3 68 3 73 0 77 C-3 73 -3 68 0 63Z" fill="#fff3c4"/></g></g>
+          <g class="candle" transform="translate(184 0)"><rect x="-4" y="84" width="8" height="38" rx="2" fill="#fff"/><rect x="-4" y="94" width="8" height="5" fill="#4cc9f0"/><g class="flame" tabindex="0" role="button" aria-label="Candle"><circle cx="0" cy="68" r="22" fill="url(#glow)"/><path d="M0 52 C7 62 7 72 0 80 C-7 72 -7 62 0 52Z" fill="#ffb627"/><path d="M0 63 C3 68 3 73 0 77 C-3 73 -3 68 0 63Z" fill="#fff3c4"/></g></g>
+          <g class="candle" transform="translate(208 0)"><rect x="-4" y="84" width="8" height="38" rx="2" fill="#fff"/><rect x="-4" y="94" width="8" height="5" fill="#ff5d73"/><g class="flame" tabindex="0" role="button" aria-label="Candle"><circle cx="0" cy="68" r="22" fill="url(#glow)"/><path d="M0 52 C7 62 7 72 0 80 C-7 72 -7 62 0 52Z" fill="#ffb627"/><path d="M0 63 C3 68 3 73 0 77 C-3 73 -3 68 0 63Z" fill="#fff3c4"/></g></g>
+        </g>
+      </svg>
+    </div>
+    <div class="cake-actions reveal" id="cakeActions">
+      <button class="btn" id="blowBtn">🎂 Blow the candles</button>
+      <button class="btn ghost" id="micBtn">🎤 Or really blow into the mic</button>
+    </div>
+    <p class="cake-hint" id="cakeHint">…or just tap each flame</p>
+    <p class="wish" id="wishMsg" aria-live="polite">✨ Wish made. May every single one of them come true, Bhai. ✨</p>
+  </div>
+</section>
+
+<!-- ============ LETTER ============ -->
+<section id="letterSec" class="chapter center">
+  <div class="wrap narrow">
+    <p class="kicker reveal"><span class="pixel">FINAL LEVEL</span> One more thing</p>
+    <button class="envelope reveal" id="envelope" aria-label="Open the letter">
+      <span class="env-flap"></span>
+      <span class="seal">❤</span>
+      <span class="env-text">A letter for you<br><small>tap to open</small></span>
+    </button>
+    <article class="letter" id="letter" aria-live="polite" hidden>
+      <div id="letterBody"></div>
+      <p class="skip" id="skip">tap to skip typing</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============ FINALE ============ -->
+<section id="finale" class="finale">
+  <div class="wrap center">
+    <p class="reveal pixel fin-small">ALL LEVELS COMPLETE</p>
+    <h2 class="reveal fin-title">Happy Birthday,<br><span class="accent">Bhai</span> ❤️</h2>
+    <p class="reveal fin-sub">With all my love — your Lakshman, <b>Kunj</b></p>
+    <button class="btn reveal" id="replay">↻ Play again</button>
+    <p class="reveal foot">Made with love &amp; a lot of code · 19 November 2026</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ LIGHTBOX ============ -->
+<div id="lb" hidden>
+  <button class="lb-x" id="lbX" aria-label="Close">✕</button>
+  <button class="lb-n prev" id="lbP" aria-label="Previous">‹</button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-n next" id="lbN" aria-label="Next">›</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
